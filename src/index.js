@@ -1,13 +1,37 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Home from "./Home.jsx";
 import reportWebVitals from "./reportWebVitals.js";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/categorias",
+    element: <h1>Categorias</h1>,
+  },
+  {
+    path: "/categorias/:id",
+    element: <h1>Categoria por id</h1>,
+  },
+  {
+    path: "/productos",
+    element: <h1>Productos</h1>,
+  },
+  {
+    path: "/productos/:id",
+    element: <h1>Productos por id</h1>,
+  },
+]);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Home />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
