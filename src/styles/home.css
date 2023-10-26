@@ -1,0 +1,6 @@
+.full-screen {
+  height: 100vh;
+  margin-top: -68px;
+  object-fit: cover;
+  object-position: 58% 60px;
+}

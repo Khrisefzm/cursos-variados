@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import Home from "./Home.jsx";
+import Home from "./Views/Home.jsx";
 import reportWebVitals from "./reportWebVitals.js";
 
 const router = createBrowserRouter([
@@ -11,19 +11,15 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/categorias",
-    element: <h1>Categorias</h1>,
-  },
-  {
     path: "/categorias/:id",
     element: <h1>Categoria por id</h1>,
   },
   {
-    path: "/productos",
+    path: "/cursos",
     element: <h1>Productos</h1>,
   },
   {
-    path: "/productos/:id",
+    path: "/cursos/:id",
     element: <h1>Productos por id</h1>,
   },
 ]);
