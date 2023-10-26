@@ -1,16 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/navBar.css";
+import logo from "../img/Logo.png";
 
 export const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg customized py-1">
       <div className="container-fluid">
         <Link to={"/"} className="navbar-brand">
           <img
-            src="https://scontent.flim31-1.fna.fbcdn.net/v/t39.30808-6/341098938_716758236907857_5075811661982531885_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF8kri1xtNbhmHeP1BCQK_4Hbn8qLE6X2UdufyosTpfZR4B5QLAiKMxOeRleBZd98RazKIjHkFiazh4WhYOnC8B&_nc_ohc=uRCk9mZ15gEAX-AtgVC&_nc_ht=scontent.flim31-1.fna&oh=00_AfBhepDBiiX_QUMD3Db5H3IeTwBddudKcVSH5vLpvwwudA&oe=653DDD70"
+            src={logo}
             alt="Logo"
-            width="80"
-            height="80"
+            width="30"
+            height="50"
             className="d-inline-block align-text-top"
           />
         </Link>
