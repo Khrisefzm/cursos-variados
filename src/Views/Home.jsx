@@ -1,21 +1,23 @@
 import React from "react";
 import "../styles/home.css";
-import laptop from "../img/home-img/laptop.png";
+import desktop from "../img/home-img/desktop.png";
+import calendar from "../img/home-img/schedule.png";
+import guaratee from "../img/home-img/ribbon.png";
 import { NavBar } from "../Components/NavBar.jsx";
 import { BenefitCard } from "../Components/BenefitCard.jsx";
 
 function Home() {
   const benefits = [
     {
-      ico: laptop,
+      ico: desktop,
       text: "Son online, para que puedas verlos desde donde quieras",
     },
     {
-      ico: "icono1",
+      ico: calendar,
       text: "Puedes verlos cuando quieras, tú eliges tus tiempos",
     },
     {
-      ico: "icono1",
+      ico: guaratee,
       text: "Cuentan con garantía de 7 días",
     },
   ];

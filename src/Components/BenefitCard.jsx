@@ -7,7 +7,7 @@ export const BenefitCard = ({ ico, text }) => {
         <div className="col">
           <img src={ico} alt="benefit icon" />
         </div>
-        <div className="col">{text}</div>
+        <div className="col ">{text}</div>
       </div>
     </div>
   );
