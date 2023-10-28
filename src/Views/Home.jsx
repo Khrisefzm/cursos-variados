@@ -1,8 +1,24 @@
 import React from "react";
 import "../styles/home.css";
+import laptop from "../img/home-img/laptop.png";
 import { NavBar } from "../Components/NavBar.jsx";
+import { BenefitCard } from "../Components/BenefitCard.jsx";
 
 function Home() {
+  const benefits = [
+    {
+      ico: laptop,
+      text: "Son online, para que puedas verlos desde donde quieras",
+    },
+    {
+      ico: "icono1",
+      text: "Puedes verlos cuando quieras, tú eliges tus tiempos",
+    },
+    {
+      ico: "icono1",
+      text: "Cuentan con garantía de 7 días",
+    },
+  ];
   return (
     <>
       <NavBar />
@@ -12,6 +28,14 @@ function Home() {
         alt="fondo de imagen"
         loading="lazy"
       />
+      <section className="p-4">
+        <h2 className="text-center">TODOS NUESTROS CURSOS </h2>
+        <div className="row">
+          {benefits.map((element) => {
+            return <BenefitCard ico={element.ico} text={element.text} />;
+          })}
+        </div>
+      </section>
     </>
   );
 }
