@@ -18,7 +18,7 @@ function Home() {
     },
     {
       ico: guaratee,
-      text: "Cuentan con garantía de 7 días",
+      text: "Cuentan con garantía de reembolso total de 7 días",
     },
   ];
   return (
