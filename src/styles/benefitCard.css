@@ -1,0 +1,20 @@
+.icon {
+  width: 80px;
+}
+@media only screen and (not (max-width: 760px)) {
+  .cardText {
+    height: 67px;
+    text-align: justify;
+  }
+}
+@media only screen and (not (max-width: 575.9px)) and (max-width: 760px) {
+  .cardText {
+    height: 134px;
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .cardText {
+    text-align: center;
+  }
+}
