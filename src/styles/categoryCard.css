@@ -1,0 +1,13 @@
+.categoryImg {
+  aspect-ratio: 3/2;
+  opacity: 0.35;
+  object-fit: fill;
+}
+/* .card {
+  height: 100px;
+} */
+.card:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
