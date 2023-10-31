@@ -10,6 +10,7 @@ import relationship from "../img/home-img/relaciones.jpg";
 import { NavBar } from "../Components/NavBar.jsx";
 import { BenefitCard } from "../Components/BenefitCard.jsx";
 import { CategoryCard } from "../Components/CategoryCard";
+import { Footer } from "../Components/Footer";
 
 function Home() {
   const benefits = [
@@ -70,6 +71,7 @@ function Home() {
           })}
         </div>
       </section>
+      <Footer />
     </>
   );
 }
