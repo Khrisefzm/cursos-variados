@@ -3,8 +3,14 @@ import "../styles/home.css";
 import desktop from "../img/home-img/desktop.png";
 import calendar from "../img/home-img/schedule.png";
 import guaratee from "../img/home-img/ribbon.png";
+import home from "../img/home-img/hogar y mascota.jpg";
+import money from "../img/home-img/emprendimiento y finanzas.jpg";
+import health from "../img/home-img/salud y bienestar.jpg";
+import relationship from "../img/home-img/relaciones.jpg";
 import { NavBar } from "../Components/NavBar.jsx";
 import { BenefitCard } from "../Components/BenefitCard.jsx";
+import { CategoryCard } from "../Components/CategoryCard";
+import { Footer } from "../Components/Footer";
 
 function Home() {
   const benefits = [
@@ -21,6 +27,25 @@ function Home() {
       text: "Cuentan con garantía de reembolso total de 7 días",
     },
   ];
+
+  const categories = [
+    {
+      img: home,
+      name: "Hogar y Mascotas",
+    },
+    {
+      img: money,
+      name: "Emprendimiento y Finanzas",
+    },
+    {
+      img: health,
+      name: "Salud y Bienestar",
+    },
+    {
+      img: relationship,
+      name: "Relaciones",
+    },
+  ];
   return (
     <>
       <NavBar />
@@ -30,7 +55,7 @@ function Home() {
         alt="fondo de imagen"
         loading="lazy"
       />
-      <section className="p-4">
+      <section className="p-4 container">
         <h2 className="text-center">TODOS NUESTROS CURSOS </h2>
         <div className="row">
           {benefits.map((element) => {
@@ -38,6 +63,15 @@ function Home() {
           })}
         </div>
       </section>
+      <section className="container">
+        <h2 className="text-center">Categorías</h2>
+        <div className="row">
+          {categories.map((element) => {
+            return <CategoryCard img={element.img} name={element.name} />;
+          })}
+        </div>
+      </section>
+      <Footer />
     </>
   );
 }
