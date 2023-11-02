@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Home from "./Views/Home.jsx";
 import reportWebVitals from "./reportWebVitals.js";
+import { Category } from "./Views/Category.jsx";
 
 const router = createBrowserRouter([
   {
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/categorias/:id",
-    element: <h1>Categoria por id</h1>,
+    element: <Category />,
   },
   {
     path: "/cursos",

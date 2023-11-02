@@ -16,7 +16,7 @@ export const Footer = () => {
         </p>
         <div className="d-flex justify-content-center">
           <Link
-            to=""
+            to="https://www.facebook.com/profile.php?id=100071801605484"
             className="mx-2"
             target="_blank"
             rel="noopener noreferrer"
@@ -30,7 +30,7 @@ export const Footer = () => {
           </Link>
           <Link
             className="mx-2"
-            to=""
+            to="https://www.instagram.com/cursosvariados.oficial/"
             target="_blank"
             rel="noopener noreferrer"
           >

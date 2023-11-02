@@ -30,18 +30,22 @@ function Home() {
 
   const categories = [
     {
+      id: 1,
       img: home,
       name: "Hogar y Mascotas",
     },
     {
+      id: 2,
       img: money,
       name: "Emprendimiento y Finanzas",
     },
     {
+      id: 3,
       img: health,
       name: "Salud y Bienestar",
     },
     {
+      id: 4,
       img: relationship,
       name: "Relaciones",
     },
@@ -58,16 +62,25 @@ function Home() {
       <section className="p-4 container">
         <h2 className="text-center">TODOS NUESTROS CURSOS </h2>
         <div className="row">
-          {benefits.map((element) => {
-            return <BenefitCard ico={element.ico} text={element.text} />;
+          {benefits.map((element, key) => {
+            return (
+              <BenefitCard key={key} ico={element.ico} text={element.text} />
+            );
           })}
         </div>
       </section>
       <section className="container">
         <h2 className="text-center">Categorías</h2>
         <div className="row">
-          {categories.map((element) => {
-            return <CategoryCard img={element.img} name={element.name} />;
+          {categories.map((element, key) => {
+            return (
+              <CategoryCard
+                key={key}
+                id={element.id}
+                img={element.img}
+                name={element.name}
+              />
+            );
           })}
         </div>
       </section>
