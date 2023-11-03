@@ -55,13 +55,13 @@ function Home() {
       <NavBar />
       <img
         className="full-screen"
-        src="https://scontent.flim31-1.fna.fbcdn.net/v/t39.30808-6/341097437_757491112660791_8783214212845245248_n.png?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHejP1SIECDzXRcWaS5prBnj_CArHlkZ8GP8ICseWRnwX_mUn07biqBsCYrEnE-dxkWiodPw5JUHq8skWBSSBqn&_nc_ohc=jok237fgLsQAX8PavJD&_nc_ht=scontent.flim31-1.fna&oh=00_AfCfabsEBQGhuVnb3xZUl3AwHZcQypFxV7ajljwxNkqGlQ&oe=653DFE18"
+        src="https://scontent.flim31-1.fna.fbcdn.net/v/t39.30808-6/341097437_757491112660791_8783214212845245248_n.png?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHejP1SIECDzXRcWaS5prBnj_CArHlkZ8GP8ICseWRnwX_mUn07biqBsCYrEnE-dxkWiodPw5JUHq8skWBSSBqn&_nc_ohc=oai6Ib2b12gAX8slWSS&_nc_ht=scontent.flim31-1.fna&oh=00_AfCZomtgBRW-LDyV1phMgDKmZZGdH0oon89Ot-DvZyZGpA&oe=6547E158"
         alt="fondo de imagen"
         loading="lazy"
       />
-      <section className="p-4 container">
-        <h2 className="text-center">TODOS NUESTROS CURSOS </h2>
-        <div className="row">
+      <section className="py-5 container">
+        <h2 className="text-center">Todos nuestros Cursos: </h2>
+        <div className="row pt-4">
           {benefits.map((element, key) => {
             return (
               <BenefitCard key={key} ico={element.ico} text={element.text} />
@@ -69,9 +69,9 @@ function Home() {
           })}
         </div>
       </section>
-      <section className="container">
+      <section className="pb-5 container">
         <h2 className="text-center">Categorías</h2>
-        <div className="row">
+        <div className="row pt-4">
           {categories.map((element, key) => {
             return (
               <CategoryCard

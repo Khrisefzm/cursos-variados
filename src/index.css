@@ -4,7 +4,7 @@
   /* typography and color text*/
   --tittle-typo: Tangerine, serif;
   --text-typo: "Source Sans 3", sans-serif;
-  --title-color: #3f268e;
+  --title-color: #d3864c;
   --text-color: #929292;
   --full-screen: #d2e5fe;
 }
@@ -59,4 +59,11 @@ body {
   color: var(--text-color);
   background-color: var(--primary-color);
   line-height: 1.4em;
+}
+
+h1,
+h2 {
+  color: var(--title-color);
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 600;
 }
