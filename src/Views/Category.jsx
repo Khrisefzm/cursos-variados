@@ -19,9 +19,9 @@ export const Category = () => {
   return (
     <>
       <NavBar />
-      <main className="py-3">
+      <main className="py-3 container">
         <h1 className="text-center">Categoria {params.id}</h1>
-        <div className="row">
+        <div className="row d-flex align-items-stretch">
           {categoryProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
