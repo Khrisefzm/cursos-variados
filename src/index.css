@@ -67,3 +67,11 @@ h2 {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 600;
 }
+.btn-primary {
+  background-color: #d3864c;
+  border-color: #7c4d2a;
+}
+.btn-primary:hover {
+  background-color: #ff8b33;
+  border-color: #d48549;
+}
