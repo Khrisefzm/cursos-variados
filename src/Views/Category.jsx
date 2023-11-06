@@ -2,13 +2,17 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { NavBar } from "../Components/NavBar.jsx";
 import { Footer } from "../Components/Footer.jsx";
+import { ProductCard } from "../Components/ProductCard.jsx";
 
 import products from "../mocks/products.json";
-import { ProductCard } from "../Components/ProductCard.jsx";
+import categories from "../mocks/categories.json";
 
 export const Category = () => {
   const params = useParams();
-  const categoryId = params.id * 1;
+  const categoryId = params.id * 1; //Same to make a Parce int
+
+  const category = categories.filter((element) => element.id === categoryId); //Obtein an array of the category with the param id
+  console.log(category.length === 0);
 
   const categoryProducts = products.filter((element) => {
     for (let i = 0; i < element.category.length; i++) {
@@ -20,12 +24,18 @@ export const Category = () => {
     <>
       <NavBar />
       <main className="py-3 container">
-        <h1 className="text-center">Categoria {params.id}</h1>
-        <div className="row d-flex align-items-stretch">
-          {categoryProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+        {category.length === 0 ? (
+          <h1>404 Not Found</h1>
+        ) : (
+          <>
+            <h1 className="text-center">{category[0].name}</h1>
+            <div className="row d-flex align-items-stretch">
+              {categoryProducts.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
+          </>
+        )}
       </main>
       <Footer />
     </>
