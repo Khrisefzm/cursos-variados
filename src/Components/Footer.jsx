@@ -45,7 +45,7 @@ export const Footer = () => {
       </div>
       <div className="mt-3">
         <p className="text-center text-light reduceFontSize">
-          © {year} Cursos Variados. All rights reserved.
+          © {year} Cursos Variados. Todos los derechos reservaods.
         </p>
       </div>
     </footer>
