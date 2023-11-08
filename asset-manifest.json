@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cursos-variados-repo/static/css/main.8758766d.css",
+    "main.js": "/cursos-variados-repo/static/js/main.8046cfda.js",
+    "static/js/787.30ce124e.chunk.js": "/cursos-variados-repo/static/js/787.30ce124e.chunk.js",
+    "static/media/Cursos.jpg": "/cursos-variados-repo/static/media/Cursos.346b07f4b98f0595eda3.jpg",
+    "static/media/hogar y mascota.jpg": "/cursos-variados-repo/static/media/hogar y mascota.8039b3a7b21a46d97099.jpg",
+    "static/media/salud y bienestar.jpg": "/cursos-variados-repo/static/media/salud y bienestar.e55fa6671f8e44a0bef2.jpg",
+    "static/media/schedule.png": "/cursos-variados-repo/static/media/schedule.08574752ed9e1ce7fa6e.png",
+    "static/media/ribbon.png": "/cursos-variados-repo/static/media/ribbon.b6374fce39c5453dac3d.png",
+    "static/media/Logo.png": "/cursos-variados-repo/static/media/Logo.f1ea912c5bba473387a1.png",
+    "static/media/emprendimiento y finanzas.jpg": "/cursos-variados-repo/static/media/emprendimiento y finanzas.8a0ac4cb468e3eb60266.jpg",
+    "static/media/relaciones.jpg": "/cursos-variados-repo/static/media/relaciones.85c799207bdcc08893b1.jpg",
+    "index.html": "/cursos-variados-repo/index.html",
+    "main.8758766d.css.map": "/cursos-variados-repo/static/css/main.8758766d.css.map",
+    "main.8046cfda.js.map": "/cursos-variados-repo/static/js/main.8046cfda.js.map",
+    "787.30ce124e.chunk.js.map": "/cursos-variados-repo/static/js/787.30ce124e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8758766d.css",
+    "static/js/main.8046cfda.js"
+  ]
+}
