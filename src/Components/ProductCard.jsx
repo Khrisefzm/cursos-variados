@@ -14,7 +14,7 @@ export const ProductCard = ({ product }) => {
         <h2 className="productCardTitle">{product.name}</h2>
         <p className="p-0 m-0">{product.description}</p>
         <div className="d-flex flex-row-reverse align-items-end bottonProductContainer">
-          <Link to={product.link} target="_blanck">
+          <Link to={product.link} target="_blank">
             <button className="btn btn-primary">Ver más</button>
           </Link>
         </div>
