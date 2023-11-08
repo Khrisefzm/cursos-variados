@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/home.css";
+import course from "../img/home-img/Cursos.jpg";
 import desktop from "../img/home-img/desktop.png";
 import calendar from "../img/home-img/schedule.png";
 import guaratee from "../img/home-img/ribbon.png";
@@ -50,12 +51,13 @@ function Home() {
       name: "Relaciones",
     },
   ];
+
   return (
     <>
       <NavBar />
       <img
         className="full-screen"
-        src="https://scontent.flim31-1.fna.fbcdn.net/v/t39.30808-6/341097437_757491112660791_8783214212845245248_n.png?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHejP1SIECDzXRcWaS5prBnj_CArHlkZ8GP8ICseWRnwX_mUn07biqBsCYrEnE-dxkWiodPw5JUHq8skWBSSBqn&_nc_ohc=oai6Ib2b12gAX8slWSS&_nc_ht=scontent.flim31-1.fna&oh=00_AfCZomtgBRW-LDyV1phMgDKmZZGdH0oon89Ot-DvZyZGpA&oe=6547E158"
+        src={course}
         alt="fondo de imagen"
         loading="lazy"
       />
@@ -74,12 +76,14 @@ function Home() {
         <div className="row pt-4">
           {categories.map((element, key) => {
             return (
-              <CategoryCard
-                key={key}
-                id={element.id}
-                img={element.img}
-                name={element.name}
-              />
+              <>
+                <CategoryCard
+                  key={key}
+                  id={element.id}
+                  img={element.img}
+                  name={element.name}
+                />
+              </>
             );
           })}
         </div>

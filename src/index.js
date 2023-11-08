@@ -5,6 +5,7 @@ import "./index.css";
 import Home from "./Views/Home.jsx";
 import reportWebVitals from "./reportWebVitals.js";
 import { Category } from "./Views/Category.jsx";
+import { Products } from "./Views/Products.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/cursos",
-    element: <h1>Productos</h1>,
+    element: <Products />,
   },
   {
     path: "/cursos/:id",
