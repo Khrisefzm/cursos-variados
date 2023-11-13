@@ -1,5 +1,6 @@
 # Cursos Variados is a web for selling courses.
-Autor: Khrise Franchesca Zegarra Muñoz
+Autor: Khrise Franchesca Zegarra Muñoz.\
+
 Technologies: HTML - CSS - JavaScript - ReactJS - Bootstramp
 
 ## Getting Started with Create React App
