@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Cursos Variados is a web for selling courses.
+Autor: Khrise Franchesca Zegarra Muñoz
+Technologies: HTML - CSS - JavaScript - ReactJS - Bootstramp
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
