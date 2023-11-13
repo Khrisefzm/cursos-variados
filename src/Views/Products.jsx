@@ -61,9 +61,20 @@ export const Products = () => {
           )}
         </form>
         <div className="row d-flex align-items-stretch">
-          {productName.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
+          {productName.length === 0 ? (
+            <>
+              <h2 className="text-center">
+                Otros cursos que te pueden interesar
+              </h2>
+              {products.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </>
+          ) : (
+            productName.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))
+          )}
         </div>
       </main>
       <Footer />
