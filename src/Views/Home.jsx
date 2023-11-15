@@ -12,6 +12,7 @@ import { NavBar } from "../Components/NavBar.jsx";
 import { BenefitCard } from "../Components/BenefitCard.jsx";
 import { CategoryCard } from "../Components/CategoryCard";
 import { Footer } from "../Components/Footer";
+import { DistinguishSection } from "../Components/DistinguishSection.jsx";
 
 function Home() {
   const benefits = [
@@ -55,39 +56,44 @@ function Home() {
   return (
     <>
       <NavBar />
-      <img
-        className="full-screen"
-        src={course}
-        alt="fondo de imagen"
-        loading="lazy"
-      />
-      <section className="py-5 container">
-        <h2 className="text-center">Todos nuestros Cursos: </h2>
-        <div className="row pt-4">
-          {benefits.map((element, key) => {
-            return (
-              <BenefitCard key={key} ico={element.ico} text={element.text} />
-            );
-          })}
-        </div>
-      </section>
-      <section className="pb-5 container">
-        <h2 className="text-center">Categorías</h2>
-        <div className="row pt-4">
-          {categories.map((element, key) => {
-            return (
-              <>
+      <main>
+        <img
+          className="full-screen"
+          src={course}
+          alt="fondo de imagen"
+          loading="lazy"
+        />
+        <section className="py-5 container">
+          <h2 className="text-center">Todos nuestros Cursos: </h2>
+          <div className="row pt-4">
+            {benefits.map((element, key) => {
+              return (
+                <BenefitCard key={key} ico={element.ico} text={element.text} />
+              );
+            })}
+          </div>
+        </section>
+        <section className="pb-5 container">
+          <h2 className="text-center">Categorías</h2>
+          <div className="row pt-4">
+            {categories.map((category) => {
+              return (
                 <CategoryCard
-                  key={key}
-                  id={element.id}
-                  img={element.img}
-                  name={element.name}
+                  key={category.id}
+                  id={category.id}
+                  img={category.img}
+                  name={category.name}
                 />
-              </>
-            );
-          })}
-        </div>
-      </section>
+              );
+            })}
+          </div>
+        </section>
+        <section className="pb-5 container">
+          <h2 className="text-center">Destacados</h2>
+          <DistinguishSection />
+        </section>
+      </main>
+
       <Footer />
     </>
   );

@@ -12,7 +12,6 @@ export const Category = () => {
   const categoryId = params.id * 1; //Same to make a Parce int
 
   const category = categories.filter((element) => element.id === categoryId); //Obtein an array of the category with the param id
-  console.log(category.length === 0);
 
   const categoryProducts = products.filter((element) => {
     for (let i = 0; i < element.category.length; i++) {
