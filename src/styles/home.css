@@ -4,3 +4,6 @@
   object-fit: cover;
   object-position: 58% 60px;
 }
+.distinguish {
+  background-color: rgb(211, 134, 76, 0.2);
+}

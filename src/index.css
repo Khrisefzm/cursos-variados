@@ -67,6 +67,9 @@ h2 {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 600;
 }
+h3 {
+  color: #724a25;
+}
 .btn-primary {
   background-color: #d3864c;
   border-color: #7c4d2a;

@@ -63,35 +63,41 @@ function Home() {
           alt="fondo de imagen"
           loading="lazy"
         />
-        <section className="py-5 container">
-          <h2 className="text-center">Todos nuestros Cursos: </h2>
-          <div className="row pt-4">
-            {benefits.map((element, key) => {
-              return (
-                <BenefitCard key={key} ico={element.ico} text={element.text} />
-              );
-            })}
-          </div>
-        </section>
-        <section className="pb-5 container">
-          <h2 className="text-center">Categorías</h2>
-          <div className="row pt-4">
-            {categories.map((category) => {
-              return (
-                <CategoryCard
-                  key={category.id}
-                  id={category.id}
-                  img={category.img}
-                  name={category.name}
-                />
-              );
-            })}
-          </div>
-        </section>
-        <section className="pb-5 container">
-          <h2 className="text-center">Destacados</h2>
-          <DistinguishSection />
-        </section>
+        <div className="container-lg container-fluid">
+          <section className="py-5">
+            <h2 className="text-center">Todos nuestros Cursos: </h2>
+            <div className="row pt-4">
+              {benefits.map((element, key) => {
+                return (
+                  <BenefitCard
+                    key={key}
+                    ico={element.ico}
+                    text={element.text}
+                  />
+                );
+              })}
+            </div>
+          </section>
+          <section className="pb-5">
+            <h2 className="text-center">Categorías</h2>
+            <div className="row pt-4">
+              {categories.map((category) => {
+                return (
+                  <CategoryCard
+                    key={category.id}
+                    id={category.id}
+                    img={category.img}
+                    name={category.name}
+                  />
+                );
+              })}
+            </div>
+          </section>
+          <section className="distinguish rounded mb-5 py-0">
+            <h2 className="text-center mb-3 pt-3">Destacados</h2>
+            <DistinguishSection />
+          </section>
+        </div>
       </main>
 
       <Footer />

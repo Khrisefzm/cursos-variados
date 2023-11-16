@@ -1,6 +1,7 @@
 .imageProducts {
   aspect-ratio: 1/1;
   object-fit: contain;
+  background-color: rgb(249, 249, 249);
 }
 
 .productCardTitle {
