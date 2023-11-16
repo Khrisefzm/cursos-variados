@@ -123,7 +123,7 @@
     "image": "https://static-media.hotmart.com/z1WFcg21xQ_6xlzoLACvpy8rjAo=/filters:background_color(white)/hotmart/product_pictures/19475a4e-1d4f-4d66-a2d1-e89cacfbccb5/KetosisUnlimitedportadahotmart3.png",
     "link": "https://go.hotmart.com/F88117478H",
     "category": [3],
-    "distinguish": false
+    "distinguish": true
   },
   {
     "id": 17,
@@ -168,7 +168,7 @@
     "image": "https://static-media.hotmart.com/FfYEENCIifkp5679Eisr1LoWAlA=/filters:background_color(white)/hotmart/product_pictures/4fa1d8c3-8de3-41fd-80cc-d409a7cf2b58/MULTIPLESNEGOCIOSDIGITALESLOGO.png",
     "link": "https://go.hotmart.com/O88118184E",
     "category": [2],
-    "distinguish": true
+    "distinguish": false
   },
   {
     "id": 23,

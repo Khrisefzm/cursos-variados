@@ -20,10 +20,14 @@ export const DistinguishSection = () => {
         );
         return (
           <div key={category.id}>
-            <h3 className="text-center">{category.name}</h3>
-            <hr />
+            <div
+              className="border-top border-bottom border-secondary border-2 p-3 mb-3 my-0"
+              style={{ backgroundColor: "rgb(220, 104, 34, 0.1)" }}
+            >
+              <h3 className="text-center">{category.name}</h3>
+            </div>
             <div className="col">
-              <div className="row d-flex flex-row">
+              <div className="row d-flex flex-row px-3">
                 {distinguishProductsPerCategory.map((product) => (
                   <DistinguishProductCard key={product.id} product={product} />
                 ))}
